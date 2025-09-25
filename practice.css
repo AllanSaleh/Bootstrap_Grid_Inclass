@@ -1,0 +1,42 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40vh 75px auto;
+  grid-template-areas:
+    'header header header'
+    'nav nav nav'
+    'main main form';
+}
+
+header {
+  background-color: rgb(255, 237, 237);
+  grid-area: header;
+}
+
+nav {
+  background-color: rgb(226, 226, 255);
+  grid-area: nav;
+}
+
+main {
+  background-color: rgb(255, 240, 230);
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+form {
+  background-color: rgb(237, 218, 255);
+  grid-area: form;
+}
+
+/* Select all divs in the main */
+/* main div{
+  background-color: rgb(179, 255, 255);
+  border: 2px solid black;
+} */
+
+.card {
+  background-color: rgb(179, 255, 255);
+  border: 2px solid black;
+}
